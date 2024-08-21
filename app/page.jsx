@@ -31,6 +31,12 @@ export default function TelaInicial() {
     const tela = useRef(0);
 
     function changeTela(modificador) {
+        let translate = 400;
+
+        if(screen.width <= 600) {
+            translate = 250
+        }
+
         tela.current += modificador;
         
         if(tela.current == -1) {
@@ -40,8 +46,8 @@ export default function TelaInicial() {
             tela.current = 0;
         }
 
-        document.getElementById('roulette').style.transform = `translateX(-${400 * tela.current}px)`;
-        document.getElementById('roulette-icons').style.transform = `translateX(-${400 * tela.current}px)`;
+        document.getElementById('roulette').style.transform = `translateX(-${translate * tela.current}px)`;
+        document.getElementById('roulette-icons').style.transform = `translateX(-${translate * tela.current}px)`;
     }
 
     return(
