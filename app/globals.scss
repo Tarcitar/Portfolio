@@ -1,0 +1,92 @@
+@use 'vars';
+
+:root {
+    background-color: vars.$corFundoClaro;
+
+    &.escuro {
+        background-color: vars.$corFundoEscuro;
+
+        h5 {
+            color: vars.$corSecunEscuro;
+        }
+
+        h2 {
+            color: vars.$corPrincEscuro;
+        }
+
+        #img-tema {
+            background: vars.$corFundoEscuro;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -2.5px;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2, h5 {
+    font-weight: 400;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.h100-border {
+    height: calc(100% - 200px);
+}
+
+.w400 {
+    width: 400px;
+}
+
+.h24 {
+    height: 24px;
+}
+
+.overflow-hidden {
+    overflow: clip;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.w1200 {
+    width: 1200px;
+}
+
+.animation1s {
+    transition: 1s;
+}
+
+.h64 {
+    height: 64px;
+}

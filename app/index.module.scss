@@ -1,0 +1,278 @@
+@use 'vars';
+
+.divTela {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 120px;
+}
+
+.borda1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda1);
+}
+
+.borda2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda2);
+    visibility: hidden;
+}
+
+.borda3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda3);
+    visibility: hidden;
+}
+
+.borda4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda4);
+    visibility: hidden;
+}
+
+.borda5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda5);
+    visibility: hidden;
+}
+
+.borda6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda6);
+    visibility: hidden;
+}
+
+.borda7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda7);
+    visibility: hidden;
+}
+
+.borda8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda8);
+    visibility: hidden;
+}
+
+.borda9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda9);
+    visibility: hidden;
+}
+
+.borda10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda10);
+    visibility: hidden;
+}
+
+.borda11 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda11);
+    visibility: hidden;
+}
+
+.borda12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda12);
+    visibility: hidden;
+}
+
+.borda13 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 100px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    image-rendering: pixelated;
+    border-image-source: url(vars.$borda13);
+    visibility: hidden;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.inputTema {
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.imgTema {
+    width: 56px;
+    padding: 3px;
+    background: vars.$corFundoClaro;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.imgSeta {
+    margin: -5px 10px 0 10px;
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+
+.h2Mode {
+    color: vars.$corPrincClaro;
+    width: 400px;
+    text-align: center;
+}
+
+.h2 {
+    color: vars.$corPrincClaro;
+}
+
+.h5 {
+    color: vars.$corSecunClaro;
+}
+
+.imgLogo {
+    margin-top: -14px;
+    width: 62px;
+    height: 62px;
+    margin-left: 20px;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
+
+.imgIcone {
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+    image-rendering: pixelated;
+    cursor: pointer;
+}
