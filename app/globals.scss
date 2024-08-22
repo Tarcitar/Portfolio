@@ -45,6 +45,10 @@ img {
     display: flex;
 }
 
+.flex-row-responsive {
+    display: flex;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -93,18 +97,22 @@ img {
 
 @media (max-width: 600px) { 
     h2 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     h5 {
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 
     .w400 {
-        width: 250px;
+        width: 240px;
     }
 
     .w1200 {
-        width: 750px;
+        width: 720px;
+    }
+    
+    .flex-row-responsive {
+        flex-direction: column;
     }
 }

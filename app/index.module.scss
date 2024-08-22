@@ -5,6 +5,7 @@
     height: 100vh;
     width: 100vw;
     padding: 0 120px;
+    max-height: -webkit-fill-available;
 }
 
 .borda1 {
@@ -20,6 +21,7 @@
     border-image-repeat: round;
     image-rendering: pixelated;
     border-image-source: url(vars.$borda1);
+    max-height: -webkit-fill-available;
 }
 
 .borda2 {
@@ -36,6 +38,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda2);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda3 {
@@ -52,6 +55,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda3);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda4 {
@@ -68,6 +72,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda4);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda5 {
@@ -84,6 +89,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda5);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda6 {
@@ -100,6 +106,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda6);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda7 {
@@ -116,6 +123,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda7);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda8 {
@@ -132,6 +140,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda8);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda9 {
@@ -148,6 +157,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda9);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda10 {
@@ -164,6 +174,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda10);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda11 {
@@ -180,6 +191,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda11);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda12 {
@@ -196,6 +208,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda12);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .borda13 {
@@ -212,6 +225,7 @@
     image-rendering: pixelated;
     border-image-source: url(vars.$borda13);
     visibility: hidden;
+    max-height: -webkit-fill-available;
 }
 
 .header {
@@ -278,8 +292,13 @@
 }
 
 @media (max-width: 600px) { 
+    .divTela {
+        padding: 0 60px;
+    }
+
     .imgTema {
-        margin-right: -50px;
+        margin-top: -25px;
+        margin-right: -75px;
     }
 
     .borda1 {
@@ -345,5 +364,24 @@
     .borda13 {
         border-image-width: 50px;
         border-image-slice: 50;
+    }
+
+    .imgSeta {
+        margin: -5px 0 0 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .imgLogo {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto;
+        image-rendering: pixelated;
+        cursor: pointer;
+    }
+
+    .imgIcone {
+        width: 64px;
+        height: 64px;
     }
 }

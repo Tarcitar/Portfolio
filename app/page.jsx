@@ -34,7 +34,7 @@ export default function TelaInicial() {
         let translate = 400;
 
         if(screen.width <= 600) {
-            translate = 250
+            translate = 240
         }
 
         tela.current += modificador;
@@ -209,7 +209,7 @@ export default function TelaInicial() {
                     />
                 </div>
                 <div
-                className='flex-row'
+                className='flex-row-responsive'
                 >
                     <div
                     className='flex-column'
