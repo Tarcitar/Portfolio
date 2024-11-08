@@ -11,6 +11,7 @@ export default function TelaInicial() {
     const { MudarTema } = useContext(TemaContext);
 
     const [imgTema, setImgTema] = useState('/img/sol.gif');
+    const [descImgTema, setDescImgTema] = useState('/img/sol.gif');
 
     const [imgLogo, setImgLogo] = useState('/img/fox-light.gif');
 
@@ -119,6 +120,7 @@ export default function TelaInicial() {
                     MudarTema();
                     if(imgTema == '/img/sol.gif') {
                         setImgTema('/img/lua.gif');
+                        setDescImgTema('Lua simbolizando o tema escuro');
                         setImgLogo('/img/fox-dark.gif');
                         setImgLink('/img/linkedin-dark.gif');
                         setImgGithub('/img/github-dark.gif');
@@ -131,6 +133,7 @@ export default function TelaInicial() {
                     }
                     else {
                         setImgTema('/img/sol.gif');
+                        setDescImgTema('Sol simbolizando o tema claro');
                         setImgLogo('/img/fox-light.gif');
                         setImgLink('/img/linkedin.gif');
                         setImgGithub('/img/github.gif');
@@ -143,6 +146,7 @@ export default function TelaInicial() {
                     }
                 }}
                 className={style.inputTema}
+                aria-label="Mudar tema"
                 />
 
                 <label
@@ -155,6 +159,7 @@ export default function TelaInicial() {
                     id="img-tema"
                     src={imgTema}
                     className={style.imgTema}
+                    alt={descImgTema}
                     />
                 </label>
             </header>
@@ -171,6 +176,8 @@ export default function TelaInicial() {
                     onClick={() => {
                         changeTela(-1);
                     }}
+                    alt="Seta para a esquerda"
+                    aria-label="Alternar entre as profissões"
                     />
 
                     <div
@@ -180,23 +187,23 @@ export default function TelaInicial() {
                         className='flex-row w1200 h24 animation1s'
                         id="roulette"
                         >
-                            <h2
-                            className={style.h2Mode}
+                            <h1
+                            className={style.h1Mode}
                             >
                                 Dev
-                            </h2>
+                            </h1>
 
-                            <h2
-                            className={style.h2Mode}
+                            <h1
+                            className={style.h1Mode}
                             >
                                 Musician
-                            </h2>
+                            </h1>
 
-                            <h2
-                            className={style.h2Mode}
+                            <h1
+                            className={style.h1Mode}
                             >
                                 Content Creator
-                            </h2>
+                            </h1>
                         </div>
                     </div>
 
@@ -206,6 +213,8 @@ export default function TelaInicial() {
                     onClick={() => {
                         changeTela(1);
                     }}
+                    alt="Seta para a direita"
+                    aria-label="Alternar entre as profissões"
                     />
                 </div>
                 <div
@@ -214,22 +223,23 @@ export default function TelaInicial() {
                     <div
                     className='flex-column'
                     >
+                        <h1
+                        className={style.h1}
+                        >
+                            Tarcísio Pereira da Silva
+                        </h1>
+
                         <h2
                         className={style.h2}
                         >
-                            Tarcísio Pereira da Silva
-                        </h2>
-
-                        <h5
-                        className={style.h5}
-                        >
                             Tarcitar
-                        </h5>
+                        </h2>
                     </div>
 
                     <img
                     src={imgLogo}
                     className={style.imgLogo}
+                    alt="Logo Tarcitar"
                     />
                 </div>
 
@@ -241,50 +251,58 @@ export default function TelaInicial() {
                     id='roulette-icons'
                     >
                         <div
-                        className='flex-row w400 h64 center'
+                        className='flex-row w400 h64 center gap20'
                         >
                             <a
                             href='https://www.linkedin.com/in/tarcisio-pereira-860571204'
                             target="_blank"
+                            aria-label="Visite meu perfil no linkedin"
                             >
                                 <img
                                 src={imgLink}
                                 className={style.imgIcone}
+                                alt="Logo do Linkedin"
                                 />
                             </a>
 
                             <a
                             href='https://github.com/Tarcitar'
                             target="_blank"
+                            aria-label="Visite meu perfil no github"
                             >
                                 <img
                                 src={imgGithub}
                                 className={style.imgIcone}
+                                alt="Logo do Github"
                                 />
                             </a>
 
                             <a
                             href='https://www.instagram.com/_tarcisio_p/'
                             target="_blank"
+                            aria-label="Visite meu perfil no instagram"
                             >
                                 <img
                                 src={imgInst}
                                 className={style.imgIcone}
+                                alt="Logo do Instagram"
                                 />
                             </a>
                         </div>
 
                         <div
-                        className='flex-row w400 h64 center'
+                        className='flex-row w400 h64 center gap20'
                         >
                             
                             <a
                             href='https://www.youtube.com/channel/UC2MfU8lU-awFEcjZwnoEfxg'
                             target="_blank"
+                            aria-label="Visite meu canal de músicas no youtube"
                             >
                                 <img
                                 src={imgYoutube}
                                 className={style.imgIcone}
+                                alt="Logo do Youtube"
                                 />
                             </a>
 
@@ -292,45 +310,53 @@ export default function TelaInicial() {
                             <a
                             href='https://open.spotify.com/intl-pt/artist/3Tub5YPUKwSFM9ZuZVGeDh?si=_S6xy4egSvSJP_5n1H6rAQ'
                             target="_blank"
+                            aria-label="Visite meu perfil de músico no spotify"
                             >
                                 <img
                                 src={imgSpotify}
                                 className={style.imgIcone}
+                                alt="Logo do Spotify"
                                 />
                             </a>
 
                             <a
                             href='https://www.instagram.com/tarcitar_/'
                             target="_blank"
+                            aria-label="Visite meu perfil de músico no instagram"
                             >
                                 <img
                                 src={imgInst}
                                 className={style.imgIcone}
+                                alt="Logo do Instagram"
                                 />
                             </a>
                         </div>
 
                         <div
-                        className='flex-row w400 h64 center'
+                        className='flex-row w400 h64 center gap20'
                         >
                             <a
                             href='https://www.youtube.com/@Tarcitar_'
                             target="_blank"
+                            aria-label="Visite meu canal de entretenimento no youtube"
                             >
                                 <img
                                 src={imgYoutube}
                                 className={style.imgIcone}
+                                alt="Logo do Youtube"
                                 />
                             </a>
 
                             <img
                             src={imgTwitch}
                             className={style.imgIcone}
+                            alt="Logo da Twitch"
                             />
 
                             <img
                             src={imgInst}
                             className={style.imgIcone}
+                            alt="Logo do Instagram"
                             />
                         </div>
                     </div>

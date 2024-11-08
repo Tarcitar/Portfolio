@@ -260,17 +260,17 @@
     cursor: pointer;
 }
 
-.h2Mode {
+.h1Mode {
     color: vars.$corPrincClaro;
     width: 400px;
     text-align: center;
 }
 
-.h2 {
+.h1 {
     color: vars.$corPrincClaro;
 }
 
-.h5 {
+.h2 {
     color: vars.$corSecunClaro;
 }
 
@@ -286,7 +286,6 @@
 .imgIcone {
     width: 64px;
     height: 64px;
-    margin-left: 10px;
     image-rendering: pixelated;
     cursor: pointer;
 }

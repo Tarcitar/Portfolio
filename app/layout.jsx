@@ -13,6 +13,8 @@ export default function RootLayout({ children }) {
                 <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9+Charted&family=Press+Start+2P&display=swap" rel="stylesheet" />
 
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+                <title>Tarcitar - Portifólio</title>
             </head>
             <body>
                 {/* Layout UI */}
