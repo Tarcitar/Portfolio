@@ -347,12 +347,18 @@ export default function TelaInicial() {
                                 />
                             </a>
 
-                            <img
-                            src={imgTwitch}
-                            className={style.imgIcone}
-                            alt="Logo da Twitch"
-                            />
-
+                            <a
+                            href='https://www.twitch.tv/tarcitar'
+                            target="_blank"
+                            aria-label="Visite meu canal de entretenimento na Twitch"
+                            >
+                                <img
+                                src={imgTwitch}
+                                className={style.imgIcone}
+                                alt="Logo da Twitch"
+                                />
+                            </a>
+                                
                             <img
                             src={imgInst}
                             className={style.imgIcone}
