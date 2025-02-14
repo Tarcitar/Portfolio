@@ -26,6 +26,8 @@ export default function TelaInicial() {
     const [imgSpotify, setImgSpotify] = useState('/img/spotify.gif');
 
     const [imgTwitch, setImgTwitch] = useState('/img/twitch.gif');
+    const [imgTiktok, setImgTiktok] = useState('/img/tiktok.gif');
+    const [imgX, setImgX] = useState('/img/x.gif');
     
 
     //.current
@@ -128,6 +130,8 @@ export default function TelaInicial() {
                         setImgYoutube('/img/youtube-dark.gif');
                         setImgSpotify('/img/spotify-dark.gif');
                         setImgTwitch('/img/twitch-dark.gif');
+                        setImgTiktok('/img/tiktok-dark.gif');
+                        setImgX('/img/x-dark.gif');
                         setImgSeta('/img/seta-dark.png');
                         setImgSetaFlip('/img/seta-flip-dark.png');
                     }
@@ -141,6 +145,8 @@ export default function TelaInicial() {
                         setImgYoutube('/img/youtube.gif');
                         setImgSpotify('/img/spotify.gif');
                         setImgTwitch('/img/twitch.gif');
+                        setImgTiktok('/img/tiktok.gif');
+                        setImgX('/img/x.gif');
                         setImgSeta('/img/seta.png');
                         setImgSetaFlip('/img/seta-flip.png');
                     }
@@ -364,6 +370,30 @@ export default function TelaInicial() {
                             className={style.imgIcone}
                             alt="Logo do Instagram"
                             />
+
+                            <a
+                            href='https://www.tiktok.com/@tarcitar'
+                            target="_blank"
+                            aria-label="Visite meu canal de entretenimento no Tiktok"
+                            >
+                                <img
+                                src={imgTiktok}
+                                className={style.imgIcone}
+                                alt="Logo do Tiktok"
+                                />
+                            </a>
+
+                            <a
+                            href='https://x.com/Tarcitar_'
+                            target="_blank"
+                            aria-label="Visite meu perfil no X"
+                            >
+                                <img
+                                src={imgX}
+                                className={style.imgIcone}
+                                alt="Logo do X"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
