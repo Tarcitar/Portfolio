@@ -339,7 +339,7 @@ export default function TelaInicial() {
                         </div>
 
                         <div
-                        className='flex-row w400 h64 center gap20'
+                        className='flex-row-grid w400 h128 h64 center gap20'
                         >
                             <a
                             href='https://www.youtube.com/@Tarcitar_'

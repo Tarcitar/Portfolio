@@ -53,6 +53,10 @@ img {
     display: flex;
 }
 
+.flex-row-grid {
+    display: flex;
+}
+
 .flex-row-responsive {
     display: flex;
 }
@@ -126,5 +130,19 @@ img {
     
     .flex-row-responsive {
         flex-direction: column;
+    }
+
+    .flex-row-grid {
+        display: grid;
+        grid-template-columns: 64px 64px 64px;
+        grid-template-rows: 64px 64px;
+    }
+
+    .h64 {
+        height: 148px;
+    }
+
+    .gap20 {
+        gap: 15px;
     }
 }
